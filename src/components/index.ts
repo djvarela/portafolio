@@ -1,0 +1,7 @@
+export * from "./home/Header"
+export * from "./home/Main"
+export * from "./home/Projects"
+export * from "./home/AboutMe"
+export * from "./home/DevelopmentProcess"
+export * from "./home/Contact"
+export * from "./home/Footer"
