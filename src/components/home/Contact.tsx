@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <section>
+    <section className="contact" id="contacto">
       <h2>Contáctame</h2>
       <h3>
         ¿Tienes un proyecto en mente? Hablemos sobre cómo podemos trabajar
@@ -62,6 +62,7 @@ export const Contact = () => {
           <button >Enviar Mensaje</button>
         </form>
       </div>
+      
     </section>
   );
 };

@@ -5,7 +5,7 @@ export const Header = () => {
 
     useEffect(() => {
       const handleScroll = () => {
-        setScrolled(window.scrollY > 80);
+        setScrolled(window.scrollY > 40);
       };
   
       window.addEventListener('scroll', handleScroll);
@@ -27,16 +27,16 @@ export const Header = () => {
               <a href="">Inicio</a>
             </li>
             <li>
-              <a href="">Proyectos</a>
+              <a href="#proyectos">Proyectos</a>
             </li>
             <li>
-              <a href="">Sobre Mí</a>
+              <a href="#sobremi">Sobre Mí</a>
             </li>
             <li>
-              <a href="">Habilidades</a>
+              <a href="#habilidades">Habilidades</a>
             </li>
             <li>
-              <a href="">Contacto</a>
+              <a href="#contacto">Contacto</a>
             </li>
           </ul>
         </nav>

@@ -3,6 +3,9 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --background: #fafaff;
@@ -42,7 +45,7 @@ header {
   height: 4.5rem;
   position: fixed;
   top: 0;
-  animation: .4s all;
+  animation: 0.4s all;
   h2 {
     margin: 0;
   }
@@ -64,11 +67,9 @@ header {
   }
 }
 
-header.scrollHeader{
-
+header.scrollHeader {
   backdrop-filter: blur(12px);
 }
-
 
 .hero {
   background: #fafaff;
@@ -88,15 +89,16 @@ header.scrollHeader{
   display: flex;
   flex-direction: column;
   margin-top: -4.5rem;
+  padding: 6rem;
 
   .hero-content {
-    padding: 16rem 1rem;
+    padding: 12rem 1rem;
     display: flex;
     gap: 1rem;
 
     .info {
       width: 70%;
-      padding: 2rem;
+      padding: 1rem;
       h2 {
         color: var(--colorPrimary);
         font-size: 2.5rem;
@@ -104,9 +106,9 @@ header.scrollHeader{
       }
       h1 {
         color: var(--colorPrimary);
-
         margin: 0;
         font-size: 4rem;
+
         span {
           font-weight: bold;
           color: var(--textColorBlack);
@@ -131,5 +133,32 @@ header.scrollHeader{
       border-radius: 100%;
       box-shadow: 1px 1px 1rem #eee;
     }
+  }
+
+  > a {
+    margin-bottom: 5rem;
+    background-color: var(--textColorWhite);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 1px 4px 1rem #d3d3d3;
+    color: var(--colorPrimary);
+    animation: 1.5s ease-in 0s infinite linear none running;
+    animation-name: bounce;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }

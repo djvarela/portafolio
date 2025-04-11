@@ -23,8 +23,8 @@ export const Main = () => {
             </p>
        
             <span>
-              <a href="" className="button-primary">Ver Proyectos</a>
-              <a href="" className="button-secondary">Ver Proyectos</a>
+              <a href="#proyectos" className="button-primary">Ver Proyectos</a>
+              <a href="#contacto" className="button-secondary">Contactame</a>
             </span>
             <p>
               Especializado en soluciones empresariales y software corporativo
@@ -32,8 +32,8 @@ export const Main = () => {
           </div>
           <div className="img-container"></div>
         </div>
-        <a href="" role="button">
-          --V
+        <a href="#proyectos" role="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
         </a>
       </section>
 

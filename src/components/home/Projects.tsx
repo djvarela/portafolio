@@ -2,7 +2,7 @@
 
 export const Projects = () => {
   return (
-    <section className="projects">
+    <section className="projects" id="proyectos">
         <h2>Proyectos Destacados</h2>
         <h3>Mostrando mi trabajo en optimización SEO y soluciones empresariales</h3>
 
