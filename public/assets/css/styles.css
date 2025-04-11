@@ -9,9 +9,9 @@ html {
 
 :root {
   --background: #fafaff;
-  --textColorBlack: #2e2e38;
+  --textColorBlack: #2e2e38cc;
   --colorPrimary: hsl(220, 70%, 60%);
-  --colorSecondary: #f3f3f7;
+  --colorSecondary: #fefefe;
   --textColorWhite: #fafaf9;
 }
 
@@ -72,24 +72,17 @@ header.scrollHeader {
 }
 
 .hero {
-  background: #fafaff;
-  background: -webkit-linear-gradient(
-    292deg,
-    #fafaff 0%,
-    rgba(229, 222, 255, 0.3) 100%
-  );
-  background: linear-gradient(
-    292deg,
-    #fafaff 0%,
-    rgba(229, 222, 255, 0.3) 100%
-  );
+ 
+  background: linear-gradient(292deg, #d3e4fd66 0%, rgb(177 192 236 / 30%) 100%);
   width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-top: -4.5rem;
-  padding: 6rem;
+  padding: .9rem;
+  align-items: center;
+  justify-content: center;
 
   .hero-content {
     padding: 12rem 1rem;
@@ -107,8 +100,8 @@ header.scrollHeader {
       h1 {
         color: var(--colorPrimary);
         margin: 0;
-        font-size: 4rem;
-
+        font-size: 3.7rem;
+        line-height: 4rem;
         span {
           font-weight: bold;
           color: var(--textColorBlack);
@@ -116,9 +109,12 @@ header.scrollHeader {
       }
       p {
         color: var(--textColorBlack);
-        font-size: 1.2rem;
-        width: 80%;
+        font-size: 1.3rem;
+        width: 90%;
         margin-top: 2rem;
+      }
+      p:nth-last-child(1) {
+        font-size: 1rem;
       }
       span {
         display: flex;
