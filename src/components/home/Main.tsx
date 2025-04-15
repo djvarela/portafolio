@@ -1,10 +1,4 @@
-import { useState } from "react";
-import {
-  AboutMe,
-  Contact,
-  DevelopmentProcess,
-  Projects,
-} from "../../components";
+import {  AboutMe, Contact, DevelopmentProcess, Projects,} from "../../components";
 
 export const Main = () => {
 

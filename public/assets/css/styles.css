@@ -9,15 +9,10 @@ html {
 
 :root {
   --background: #fafaff;
-  --textColorBlack: #2e2e38cc;
-  --colorPrimary: hsl(220, 70%, 60%);
+  --textColorBlack: #2e2e38;
+  --colorPrimary: #5281e0;
   --colorSecondary: #fefefe;
   --textColorWhite: #fafaf9;
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
 
 .button-primary {
@@ -72,15 +67,18 @@ header.scrollHeader {
 }
 
 .hero {
- 
-  background: linear-gradient(292deg, #d3e4fd66 0%, rgb(177 192 236 / 30%) 100%);
+  background: linear-gradient(
+    292deg,
+    #d3e4fd66 0%,
+    rgb(177 192 236 / 30%) 100%
+  );
   width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-top: -4.5rem;
-  padding: .9rem;
+  padding: 0.9rem;
   align-items: center;
   justify-content: center;
 
@@ -156,5 +154,92 @@ header.scrollHeader {
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+/* ##### */
+
+.projects {
+  padding: 1rem;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--textColorBlack);
+  }
+  h3 {
+    font-weight: 200;
+  }
+
+  > ul {
+    display: grid;
+    width: 100%;
+    padding: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+    justify-items: center;
+    list-style: none;
+    max-width: 1200px;
+    padding: 1rem;
+
+    > li {
+      background-color: #fff;
+      border: 1px solid #eee;
+      padding: 1rem;
+      border-radius: 0.5rem;
+
+      > span.links {
+        margin-top: .5rem;
+        display: flex;
+        padding: 1rem;
+        gap: 1rem;
+        justify-content: space-evenly;
+
+        a {
+          color: var(--colorPrimary);
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    > li:hover {
+      box-shadow: 1px 1px 1rem #eee;
+    }
+
+    .projects-technology {
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      li {
+        border-radius: 5px;
+        background-color: #f0f0f0dd;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (width >= 1024px) {
+  .projects {
+    ul {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
   }
 }
