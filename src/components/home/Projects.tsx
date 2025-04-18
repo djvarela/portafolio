@@ -59,6 +59,8 @@ export const Projects = () => {
           </ul>
         </li>
       </ul>
+
+      <button className="button-primary">Ver todo los proyectos</button>
     </section>
   );
 };

@@ -3,6 +3,7 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -20,6 +21,7 @@ html {
   background-color: var(--colorPrimary);
   color: var(--textColorWhite);
   border-radius: 0.6rem;
+  border: 1px solid transparent;
 }
 
 .button-secondary {
@@ -34,13 +36,14 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   color: var(--textColorBlack);
   background-color: transparent;
   height: 4.5rem;
   position: fixed;
   top: 0;
   animation: 0.4s all;
+
   h2 {
     margin: 0;
   }
@@ -51,10 +54,12 @@ header {
       gap: 1.5rem;
       padding: 0;
       list-style: none;
+
       a {
         color: inherit;
         font-size: 1rem;
       }
+
       a:hover {
         color: var(--colorPrimary);
       }
@@ -67,11 +72,9 @@ header.scrollHeader {
 }
 
 .hero {
-  background: linear-gradient(
-    292deg,
-    #d3e4fd66 0%,
-    rgb(177 192 236 / 30%) 100%
-  );
+  background: linear-gradient(292deg,
+      #d3e4fd66 0%,
+      rgb(177 192 236 / 30%) 100%);
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -90,35 +93,42 @@ header.scrollHeader {
     .info {
       width: 70%;
       padding: 1rem;
+
       h2 {
         color: var(--colorPrimary);
         font-size: 2.5rem;
         margin: 0;
       }
+
       h1 {
         color: var(--colorPrimary);
         margin: 0;
         font-size: 3.7rem;
         line-height: 4rem;
+
         span {
           font-weight: bold;
           color: var(--textColorBlack);
         }
       }
+
       p {
         color: var(--textColorBlack);
         font-size: 1.3rem;
         width: 90%;
         margin-top: 2rem;
       }
+
       p:nth-last-child(1) {
         font-size: 1rem;
       }
+
       span {
         display: flex;
         gap: 1rem;
       }
     }
+
     .img-container {
       border: 4px solid #fff;
       padding: 1em;
@@ -129,7 +139,7 @@ header.scrollHeader {
     }
   }
 
-  > a {
+  >a {
     margin-bottom: 5rem;
     background-color: var(--textColorWhite);
     width: 3rem;
@@ -149,9 +159,11 @@ header.scrollHeader {
   0% {
     transform: translateY(0%);
   }
+
   50% {
     transform: translateY(-20%);
   }
+
   100% {
     transform: translateY(0%);
   }
@@ -166,6 +178,7 @@ header.scrollHeader {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 
   h2 {
     margin-top: 4rem;
@@ -173,11 +186,12 @@ header.scrollHeader {
     font-weight: 500;
     color: var(--textColorBlack);
   }
+
   h3 {
     font-weight: 200;
   }
 
-  > ul {
+  >ul {
     display: grid;
     width: 100%;
     padding: 1rem;
@@ -188,14 +202,15 @@ header.scrollHeader {
     list-style: none;
     max-width: 1200px;
     padding: 1rem;
+    margin-bottom: 2rem;
 
-    > li {
+    >li {
       background-color: #fff;
       border: 1px solid #eee;
       padding: 1rem;
       border-radius: 0.5rem;
 
-      > span.links {
+      >span.links {
         margin-top: .5rem;
         display: flex;
         padding: 1rem;
@@ -208,13 +223,14 @@ header.scrollHeader {
           align-items: center;
           gap: 5px;
         }
+
         a:hover {
           text-decoration: underline;
         }
       }
     }
 
-    > li:hover {
+    >li:hover {
       box-shadow: 1px 1px 1rem #eee;
     }
 
@@ -226,17 +242,18 @@ header.scrollHeader {
       justify-content: center;
       align-items: center;
       list-style: none;
+
       li {
-        border-radius: 5px;
+        border-radius: 10px;
         background-color: #f0f0f0dd;
-        padding: 5px 10px;
+        padding: 5px 1rem;
         font-size: 0.8rem;
       }
     }
   }
 }
 
-@media (width >= 1024px) {
+@media (width >=1024px) {
   .projects {
     ul {
       grid-template-columns: repeat(3, minmax(0, 1fr));
