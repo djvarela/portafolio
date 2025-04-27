@@ -32,9 +32,9 @@ export const Header = () => {
             <li>
               <a href="#sobremi">Sobre Mí</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#habilidades">Habilidades</a>
-            </li>
+            </li> */}
             <li>
               <a href="#contacto">Contacto</a>
             </li>

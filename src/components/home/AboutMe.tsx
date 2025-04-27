@@ -1,6 +1,6 @@
 export const AboutMe = () => {
   return (
-    <section className="aboutMe">
+    <section className="aboutMe" id="sobremi">
       <h2>Sobre Mí</h2>
       <h3>
         Un desarrollador full-stack apasionado, especializado en SEO y

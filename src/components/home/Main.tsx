@@ -1,4 +1,4 @@
-import {  AboutMe, Contact, DevelopmentProcess, Projects,} from "../../components";
+import {  AboutMe, Contact, DevelopmentProcess, Projects, TechnicalSkills,} from "../../components";
 
 export const Main = () => {
 
@@ -33,7 +33,8 @@ export const Main = () => {
 
       <Projects />
       <AboutMe />
-      <DevelopmentProcess />
+      {/* <TechnicalSkills /> */}
+      {/* <DevelopmentProcess /> */}
       <Contact />
     </main>
   );
