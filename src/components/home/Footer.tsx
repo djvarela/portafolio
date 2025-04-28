@@ -14,9 +14,9 @@ export const Footer = () => {
         <p>Desarrollo full-stack con enfoque en optimización SEO y soluciones empresariales.</p>
 
         <ul>
-          <li>Githutb</li>
-          <li>Linkedin</li>
-          <li>Email</li>
+          <li><a href="https://github.com/djvarela" target="_blank" rel="noopener noreferrer"><img src="/images/github-black.svg" width="25" alt="github icon" /></a></li>
+          <li><a href="https://www.linkedin.com/in/djvarela/" title="ver perfil de Linkedin" target="_blank" rel="noopener noreferrer"><img src="/images/linkedin.svg" width="25" alt="linkedin icon" /></a></li>
+          <li><a href="mailto:contacto@diegovarela.dev"  ><img src="/images/email-black.svg" width="30" alt="" /></a></li>
         </ul>
       </div>
 
