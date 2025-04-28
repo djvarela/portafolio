@@ -1,6 +1,10 @@
 
 
 export const Footer = () => {
+
+  let year = new Date;
+
+
   return (
     <footer className="footer">
 
@@ -17,7 +21,7 @@ export const Footer = () => {
       </div>
 
       <div className="copy">
-        <h2>© 2025 DevFolio. Todos los derechos reservados.</h2>
+        <h2>© {year.getFullYear()} Diego Varela. Todos los derechos reservados.</h2>
         <h3>Diseñado y desarrollado con pasión y atención a las mejores prácticas de SEO.</h3>
       </div>
 
