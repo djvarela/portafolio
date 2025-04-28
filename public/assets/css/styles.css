@@ -39,7 +39,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 15rem;
   color: var(--textColorBlack);
   background-color: transparent;
   height: 4.5rem;
@@ -84,7 +84,7 @@ header.scrollHeader {
   display: flex;
   flex-direction: column;
   margin-top: -4.5rem;
-  padding: 0.9rem;
+  padding: 0.9rem 15rem;
   align-items: center;
   justify-content: center;
 
@@ -176,13 +176,14 @@ header.scrollHeader {
 .projects,
 .aboutMe,
 .technical-skills,
-.contact {
+.contact,
+.footer {
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 2rem;
+  padding: 5rem 15rem;
 
   h2 {
     font-size: 2.5rem;
@@ -415,7 +416,7 @@ header.scrollHeader {
 
   .contact-container {
     display: flex;
-    width: 80%;
+    width: 100%;
     padding: 1rem;
     gap: 2rem;
 
@@ -530,7 +531,6 @@ header.scrollHeader {
 }
 
 .footer {
-  padding: 1rem 5rem;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -541,6 +541,7 @@ header.scrollHeader {
   .info {
     padding: 1rem 2rem;
     width: 100%;
+
 
     h2 {
       font-size: 1.3rem;
@@ -553,9 +554,26 @@ header.scrollHeader {
       display: flex;
       gap: 2rem;
       padding: 0;
-      li{
+
+      li {
+        width: 40px;
+        height: 40px;
+        padding: 9px;
+        border-radius: 50%;
         background-color: var(--lightSecondaryColor);
-        padding: .5rem;
+        
+
+        a {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 100%;
+            object-fit: scale-down;
+          }
+        }
       }
     }
   }
