@@ -483,6 +483,7 @@ header.scrollHeader {
 
       form {
         width: 100%;
+
         .form-element {
           width: 100%;
           display: flex;
@@ -528,7 +529,56 @@ header.scrollHeader {
   }
 }
 
+.footer {
+  padding: 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 
+  .info {
+    padding: 1rem 2rem;
+    width: 100%;
+
+    h2 {
+      font-size: 1.3rem;
+      letter-spacing: 1.5px;
+      color: var(--primaryColor);
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      padding: 0;
+      li{
+        background-color: var(--lightSecondaryColor);
+        padding: .5rem;
+      }
+    }
+  }
+
+  .copy {
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+    align-items: center;
+    padding: 1rem;
+
+    h2,
+    h3 {
+      font-size: 1rem;
+      font-weight: 100;
+      margin-top: 0
+    }
+
+    ;
+  }
+}
 
 
 
