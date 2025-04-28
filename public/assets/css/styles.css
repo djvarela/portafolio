@@ -562,7 +562,7 @@ header.scrollHeader {
         padding: 9px;
         border-radius: 50%;
         background-color: var(--lightSecondaryColor);
-        
+        transition: .35s all;
 
         a {
           width: 100%;
@@ -575,6 +575,10 @@ header.scrollHeader {
             object-fit: scale-down;
           }
         }
+      }
+
+      li:hover {
+        background-color: var(--primaryColor);
       }
     }
   }
