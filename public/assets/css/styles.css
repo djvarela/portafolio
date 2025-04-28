@@ -545,7 +545,8 @@ header.scrollHeader {
 
     h2 {
       font-size: 1.3rem;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.3px;
+      font-weight: bold;
       color: var(--primaryColor);
     }
 
