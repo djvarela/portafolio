@@ -7,7 +7,7 @@ export const HomePage = () => {
 
 
 
-  
+
   return (
     <>
       <title>Home</title>

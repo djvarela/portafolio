@@ -17,6 +17,10 @@ html {
   --textColorWhite: #fafaf9;
 }
 
+main {
+  width: 100%;
+}
+
 .button-primary {
   padding: 0.7rem 2rem;
   background-color: var(--primaryColor);
@@ -334,6 +338,7 @@ header.scrollHeader {
               margin: 0;
               font-size: .9rem;
               font-weight: 400;
+              color: #5f5f5f
             }
 
             p {
@@ -370,6 +375,7 @@ header.scrollHeader {
   }
 }
 
+/* ##### */
 .technical-skills {
   background-color: var(--background);
 
@@ -411,6 +417,7 @@ header.scrollHeader {
 }
 
 
+/* ##### */
 .contact {
   background-color: var(--background);
 
@@ -604,13 +611,244 @@ header.scrollHeader {
 }
 
 
-
-
-
 @media (width >=1024px) {
   .projects {
     ul {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}
+
+@media (width <=750px) {
+
+
+
+  header {
+    padding: .6rem;
+    width: 100%;
+
+
+    nav {
+      display: none;
+    }
+
+  }
+
+  .hero {
+    padding: 12rem 0;
+    padding-bottom: 2rem;
+
+    >a {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+
+    .hero-content {
+      flex-direction: column;
+      padding: 1rem;
+      align-items: center;
+
+      .info {
+        width: 100%;
+        padding: 0;
+
+        h2 {
+          font-weight: 500;
+        }
+
+        h1 {
+          font-size: 2rem;
+          line-height: 2rem;
+        }
+
+        p {
+          font-size: .96rem;
+          width: 100%;
+          line-height: 1.5rem;
+          font-weight: 450;
+        }
+
+        p:nth-last-child(1) {
+          font-size: .8rem;
+        }
+
+        >span {
+          width: 100%;
+          margin-top: 2rem;
+          justify-content: space-evenly;
+
+
+          >a {
+            padding: .6rem 1.5rem;
+            font-size: .9rem;
+          }
+        }
+      }
+
+      .img-container {
+        width: 15rem;
+        height: 15rem;
+      }
+
+    }
+  }
+
+  .projects,
+  .aboutMe,
+  .technical-skills,
+  .contact,
+  .footer {
+    padding: 1rem;
+    width: 100%;
+
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .projects {
+    padding: 1rem;
+
+    ul {
+      flex-direction: column;
+      display: flex;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        h3 {
+          margin: 0;
+        }
+
+        p {
+          font-size: .9rem;
+        }
+      }
+
+      .projects-technology {
+
+        flex-direction: row;
+      }
+
+    }
+
+
+  }
+
+  .aboutMe {
+
+    .aboutMe-contentainer {
+
+      flex-direction: column;
+      width: 100%;
+
+      .aboutMe-info,
+      .experience {
+        width: 100%;
+        padding: 0;
+
+        ul {
+          padding: 0;
+
+          h2 {
+            text-align: start;
+          }
+
+          h3 {
+            text-align: start;
+          }
+
+          li {
+            gap: 1rem;
+            padding: 1.5rem;
+
+            .info-experience {
+
+              p {
+
+                width: 100%;
+                font-size: .9rem;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .contact {
+    .contact-container {
+      padding: 0;
+      flex-direction: column;
+
+      .contact-info,
+      .form-contact {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 0;
+
+        ul{
+          gap: 1rem;
+          margin-bottom: 0;
+        }
+
+        form {
+          flex-direction: column;
+
+          .form-element {
+            flex-direction: column;
+
+            span {
+              flex-direction: column;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+
+  .footer {
+    text-align: start;
+
+    .info {
+      padding: 0;
+
+      h2 {
+        text-align: start;
+      }
+
+      ul {
+        justify-content: center;
+        padding: 1rem;
+        margin-top: 2rem;
+
+      }
+
+    }
+
+    .copy {
+      width: 100%;
+
+      h2 {
+        font-size: .85rem
+      }
+
+      h3 {
+        font-size: .8rem
+      }
+
+      ;
     }
   }
 }
