@@ -610,6 +610,82 @@ header.scrollHeader {
   }
 }
 
+/* ##### */
+
+.loginPage {
+
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+  background-color: var(--primaryColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    max-width: 40rem;
+    background-color: #eee;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    gap: 2rem;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 1rem #202020;
+
+    h2 {
+      line-height: 2rem;
+      text-align: center;
+      color: var(--primaryColor);
+    }
+
+    span {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: .7rem;
+        font-weight: bold;
+      }
+
+      input {
+        margin-top: 3px;
+        width: 100%;
+
+        padding: .4rem;
+        border-radius: .4rem;
+        border: 1px solid #ddd
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: .5rem 1rem;
+      background-color: var(--primaryColor);
+      color: #eee;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: .8rem;
+      letter-spacing: 2px;
+    }
+
+    button:hover {
+      background-color: #4a76ce;
+    }
+  }
+
+}
+
+
+
+/* ##### */
+
 
 @media (width >=1024px) {
   .projects {
@@ -796,7 +872,7 @@ header.scrollHeader {
         padding: 1rem;
         margin-top: 0;
 
-        ul{
+        ul {
           gap: 1rem;
           margin-bottom: 0;
         }
