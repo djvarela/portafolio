@@ -1,14 +1,18 @@
+import { useState } from "react"
 
 
 export const Hero = () => {
-    
-    
+    const [dataBackend, setDataBackend] = useState([])
+
+
+  
+console.log(dataBackend.title)    
   return  (
     <section className="hero">
         <div className="hero-content">
             <div className="info">
                 <h2>Nombre</h2>
-                <h1><span>Desarrollador Full-Stack</span> & Especialista SEO</h1>
+                <h1><span>{dataBackend}</span> & Especialista SEO</h1>
                 <p>
                     Construyendo aplicaciones web potentes con enfoque en optimización
                     SEO y soluciones empresariales como CRM y ERP para gestión de
